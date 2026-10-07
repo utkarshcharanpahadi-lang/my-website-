@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM VXR ESPORTS | Link in Bio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #030508;
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Dynamic gaming ambient esports lighting */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(139, 92, 246, 0.08) 40%, rgba(3, 5, 8, 0) 75%);
+            z-index: -1;
+            animation: pulseGlow 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: translateX(-50%) scale(0.95); opacity: 0.8; }
+            100% { transform: translateX(-50%) scale(1.05); opacity: 1; }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 460px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Header Section */
+        .header-section {
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .tagline {
+            font-size: 0.92rem;
+            color: #3b82f6;
+            font-weight: 500;
+            font-style: italic;
+            letter-spacing: 0.4px;
+            margin-bottom: 18px;
+            opacity: 0.95;
+        }
+
+        /* Separate Aesthetic Estd Box with Gaming RGB Border */
+        .estd-box {
+            position: relative;
+            background: rgba(12, 16, 28, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #f3f4f6;
+            font-weight: 700;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.15), inset 0 0 10px rgba(59, 130, 246, 0.05);
+            backdrop-filter: blur(10px);
+            animation: borderShift 4s linear infinite;
+        }
+
+        @keyframes borderShift {
+            0% { border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 0 15px rgba(59, 130, 246, 0.15); }
+            50% { border-color: rgba(139, 92, 246, 0.5); box-shadow: 0 0 20px rgba(139, 92, 246, 0.2); }
+            100% { border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 0 15px rgba(59, 130, 246, 0.15); }
+        }
+
+        /* Links Section */
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Advanced RGB Neon LED Touch Sense Boxes */
+        .link-card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, rgba(13, 18, 30, 0.85), rgba(7, 10, 18, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 17px 22px;
+            border-radius: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+
+        /* Continuous subtle RGB edge lighting */
+        .link-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 18px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+            background-size: 300% 300%;
+            z-index: -1;
+            opacity: 0.25;
+            transition: opacity 0.3s ease;
+            animation: rgbFlow 6s linear infinite;
+        }
+
+        @keyframes rgbFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Intense LED Touch Sense Glow on Hover/Active */
+        .link-card:hover, .link-card:active {
+            transform: translateY(-4px) scale(1.01);
+            background: linear-gradient(135deg, rgba(20, 27, 45, 0.95), rgba(10, 14, 25, 0.98));
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(59, 130, 246, 0.35), 0 0 45px rgba(139, 92, 246, 0.2);
+        }
+
+        .link-card:hover::before {
+            opacity: 0.9;
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            z-index: 1;
+        }
+
+        .link-content i {
+            font-size: 1.25rem;
+            color: #3b82f6;
+            width: 24px;
+            text-align: center;
+            transition: transform 0.3s ease, color 0.3s ease;
+            filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+        }
+
+        .link-card:hover .link-content i {
+            transform: scale(1.15) rotate(5deg);
+            color: #f3f4f6;
+        }
+
+        .link-card .fa-arrow-right {
+            font-size: 0.8rem;
+            color: #6b7280;
+            transition: transform 0.3s ease, color 0.3s ease;
+            z-index: 1;
+        }
+
+        .link-card:hover .fa-arrow-right {
+            transform: translateX(6px);
+            color: #3b82f6;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 45px;
+        }
+
+        .footer-text {
+            font-size: 0.78rem;
+            color: #6b7280;
+            letter-spacing: 0.5px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 480px) {
+            .link-card {
+                padding: 15px 18px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header-section">
+            <h1>TEAM VXR ESPORTS</h1>
+            <p class="tagline">Conquer the Lobby, Dominate the Meta.</p>
+            <!-- Separate Estd Box -->
+            <div class="estd-box">ESTD. 2026</div>
+        </div>
+
+        <!-- Links Container with RGB Neon LED Touch Sense -->
+        <div class="links-list">
+            
+            <!-- 1. Team Instagram -->
+            <a href="https://www.instagram.com/teamvxresports?stkn=MTNkdXFtbXFxNDZoNg==" class="link-card" target="_blank" rel="noopener noreferrer">
+                <div class="link-content">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Team Instagram</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- 2. YouTube Channel -->
+            <a href="https://youtube.com/@utkarshcharanpahadi?si=qwYFKjprj1cxhcyk" class="link-card" target="_blank" rel="noopener noreferrer">
+                <div class="link-content">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Official YouTube</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- 3. Owner Instagram -->
+            <a href="https://www.instagram.com/uk_77_8?stkn=MjU3aGRsemd2cmVr" class="link-card" target="_blank" rel="noopener noreferrer">
+                <div class="link-content">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span>Owner Instagram</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- 4. Owner LinkedIn -->
+            <a href="https://www.linkedin.com/in/utkarsh-kumar-a96035431?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="link-card" target="_blank" rel="noopener noreferrer">
+                <div class="link-content">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>Owner LinkedIn</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- 5. Business Gmail -->
+            <a href="mailto:utkarshcharanpahadi@gmail.com" class="link-card" target="_blank" rel="noopener noreferrer">
+                <div class="link-content">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Business Email</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">&copy; 2026 TEAM VXR ESPORTS. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
